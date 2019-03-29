@@ -1,0 +1,464 @@
+/* Reescrevendo as propriedades dos navegadores */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+
+/* O container serve para alinhar os elementos do site conforme a margem */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.menu{
+    text-decoration: none;
+}
+header, .sobreMim{
+    background-color: rgb(18, 25, 68);
+}
+ul{
+    display: flex;
+    width: 49%;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    height: 10vh;
+}
+ul > li{
+    list-style: none;
+}
+body{
+    color: rgb(100, 93, 93);
+}
+h4{
+    color: aliceblue;
+}
+.banner {
+    text-align: center;
+    text-transform: uppercase;
+    height: 30vh;
+    background-image: 
+}
+.banner_title {
+    font-size: 2.5rem;
+    margin-top: 3em;
+}
+.banner_title-color{
+    color: blueviolet;
+}
+.subtitle{
+    color: aliceblue
+}
+.seta{
+    height: 10vh;
+    margin-top: 6%;
+}
+.projetos_title,  .titles{
+    color: blueviolet;
+    text-align: center;
+    padding: 50px;
+}
+.contato_title{
+    color: blueviolet;
+    text-align: center;
+    padding: 50px;
+}
+.projetos_site{
+    display: flex;
+    border: blueviolet;
+    width: 110%;
+    height: 80%;
+}
+.projetos{
+    height: 75vh;
+    border: 10%;
+}
+.site_img{
+    width: 84%;
+    margin: 0;
+    padding: 0;
+}
+.site_title{
+    color: rgb(18, 25, 68);
+    width: 90%;
+    margin-top: 20px;
+    line-height: 140%;
+}
+.btn{
+    padding: 5px;
+    text-align: center;
+    background-color: blueviolet;
+    width: 20%;
+    height: 5%;
+    text-transform: uppercase;
+    border-radius: 200px;
+    border: none;
+    align-content: center;
+    margin-top: 30px;
+}   
+.btn_link{
+    color: white;
+    padding: 7px;
+    margin-top: 25px;
+    font-size: 0.87rem;
+    margin-bottom: 21px;
+    align-content: center;
+    text-decoration: none;
+}
+.btn_g{
+    display: inline-block;
+    margin-top: 20px;
+}
+.sobreMim{
+    text-align: center;
+    height: 55vh;
+}
+.sobreMim_img{
+    background-color: blueviolet;
+    border-radius: 100%;
+    height: 157px;
+    object-fit: cover;
+    width: 157px;
+    margin-top: -20px;
+}
+.sobreMim_description{
+    line-height: 150%;
+    margin-top: 20px;
+}
+.contato{
+    height: 45vh;
+}
+.contato_icons{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+}
+.contato_img{
+    width: 10%;    
+}
+.contato_img-icon{
+    width: 100%;
+}
+footer{
+    background-color: rgb(18, 25, 68);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Quando a tela tiver de 1080px até 2010px */
+
+@media (min-width:1080px) and (max-width:2010px){
+    
+    .banner_title{
+        margin-top: 2em;
+        font-size: 5vh;
+    }
+    .subtitle{
+        margin-top: 2%;
+        font-size: 2vh;
+    }
+    .sobreMim_description--footer{
+        display: none;
+    }
+    .sobreMim_description{
+        padding-bottom: 1%;
+    }
+    .banner{
+        height: 27vh;
+    }
+    .seta{
+        margin-top: 4%;
+    }
+    .projetos{
+        height: 66vh;
+    }
+    .projetos_title{
+        font-size: 3vh;
+    }
+    .site_title{
+        font-size: 2vh;
+    }
+    .sobreMim{
+        height: 44vh;
+    }
+    .sobre_title{
+        padding-top: 2%;
+        font-size: 3vh;
+    }
+    .sobreMim_description{
+        font-size: 2vh;
+    }
+    .btn{
+        width: 20%;
+        height: 5%;
+        padding-top: 1.3vh;
+    }
+    .btn_link{
+        font-size: 2vh;
+        align-content: center;
+        text-align: center;
+    }
+    .contato{
+        height: 25vh;
+    }
+    .contato_icons{
+        width: 50%;
+        justify-content: space-around;
+        display: flex;
+        margin-left: 25%;
+    }
+    ul{
+        height: 8vh;
+        width: 51%;
+        font-size: 2vh;
+    }
+    footer{
+        font-size: 2vh;
+        display: flex; 
+    }
+}
+
+/* Quando a tela tiver de 768px até 1024px */
+
+@media (min-width:768px) and (max-width:1024px){
+   
+    .sobreMim_description--footer{
+        display: none;
+    }
+    .contato_title{
+        color: blueviolet;
+        text-align: center;
+        padding-top: 6%;
+        font-size: 1.9rem;
+        padding-bottom: 6%;
+    }
+    .sobre_title{
+        color: blueviolet;
+        text-align: center;
+        padding-top: 4%;
+        font-size: 1.9rem;
+    }
+    .subtitle{
+        font-size: 100%;
+        margin-top: 30%;
+    }
+    .projetos_title{
+        color: blueviolet;
+        text-align: center;
+        padding-top: 8%;
+        font-size: 1.9rem;
+    }
+    .projetos_title{
+        padding-bottom: 6%;
+        text-align: center;
+        margin-left: -2%;
+    }
+    .projetos{
+        display: inline;
+        padding-bottom: 5%;
+        width: 40%;
+    }
+    nav{
+        margin-left: 4%;
+    }
+    .banner{
+        height: 18vh;
+    }
+    .banner_title{
+        font-size: 200%;
+        margin-top: 4%;
+        margin-bottom: -28%;
+    }
+    .seta{
+        margin-top: 8%;
+    }
+    .projetos_site{
+        width: 105%;
+        margin-top: auto;
+        margin-left: 6%;
+        height: 21vh;
+    }
+    .site{
+        display: block;
+        height: 10%;
+        margin-bottom: 50%;
+        margin-left: -4%;
+    }
+    .btn{
+        width: 35%;
+        height: 90%;
+    }
+    .contato{
+        height: 50%;
+    }
+    .sobreMim{
+        height: 43vh;
+        margin-top: 21%;
+        text-align: center;
+    }
+    .site_title{
+        text-align: justify;
+        width: 80%;
+    }
+    .container{
+        margin-top: -2%;
+    }
+}
+/* Quando a tela tiver de 1080px até 1920px */
+
+@media (min-width:1080px) and (max-width:1920px){
+   
+    .banner{
+        height: 30%
+    }
+    .projetos{
+        height: 75vh;
+    }
+    .sobreMim{
+        height: 50vh;
+    }
+    .contato{
+        height: 30vh;
+    }
+    .sobreMim_description--footer{
+        display: none;
+    }
+}
+
+/* Quando a tela tiver de 320px até 725px */
+
+@media (min-width:320px) and (max-width:725px){
+   
+    .banner_title{
+        font-size: 108%;
+        height: 5vh;
+        margin-top: 7%;
+    }
+    .subtitle{
+        font-size: 65%;
+        text-align: center;
+        margin-bottom: 13%;
+        margin-top: -2%;
+    }
+    .banner{
+        height: 30%
+    }
+    .seta{
+        display: none;
+    }
+    .site{
+        align-items: stretch;
+        margin-bottom: 7%;
+    }
+    .projetos_site{
+        display: block;   
+        width: 99%;
+        margin-top: auto;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+    .projetos{
+        height: 10%;
+    }
+    .projetos_title{
+        color: blueviolet;
+        text-align: center;
+        padding-bottom: 7%;
+        padding-top: 7%;
+        font-size: 120%;
+    }
+    .site_title{
+        color: rgb(18, 25, 68);
+        margin-top: 4%;
+        margin-bottom: 3%;
+        line-height: 1.4rem;
+        font-size: 90%;
+        text-align: justify;
+        margin-right: -4%;
+    }
+    .site_img{
+        width: 90%;
+        margin-bottom: 1%;
+    }
+    .sobre_title{
+        color: blueviolet;
+        text-align: center;
+        font-size: 110%;
+        padding: 0;
+        padding-bottom: 35%;
+        padding-top: 6%;
+    }
+    h5{
+        display: none;
+    }
+    .sobreMim_description{
+        display: none;
+    }
+    .sobreMim_description--footer{
+        line-height: 1.3rem;
+        font-size: 90%;
+    }
+    .contato_title{
+        color: #8a2be2;
+        text-align: center;
+        display: inline flex; 
+        padding-top: 8%;
+        font-size: 120%;
+        padding-bottom: 9%;
+    }
+    .contato{
+        height: 30%;
+    }
+    .contato_icons{
+        margin-bottom: -6%;
+    }
+    .sobreMim_img{
+        background-color: blueviolet;
+        border-radius: 100%;
+        height: 100px;
+        object-fit: cover;
+        width: 100px;
+        margin-top: -84px;
+        margin-bottom: 5%;
+    }
+    .btn{
+        text-align: center;
+        background-color: blueviolet;
+        width: 30%;
+        height: 3.1vh;
+        text-transform: uppercase;
+        border-radius: 200px;
+        border: none;
+        align-content: center;
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+    .btn_g{
+        margin-top: 5%;
+    }
+    .btn_link{
+        font-size: 64%;
+        align-items: center;
+    }
+    .sobreMim{
+        height: 39%;
+    }
+    ul{
+        display: flex;
+        font-size: 60%;
+        list-style: none;
+        margin-left: 4%;
+        width: 60%;
+    }
+    .menu{
+        margin-top: 1vh;
+    }
+    li{
+        padding-right: 300%;
+    }
+}
